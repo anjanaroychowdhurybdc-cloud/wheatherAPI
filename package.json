@@ -1,52 +1,36 @@
 {
-  "name": "fast-json-stable-stringify",
-  "version": "2.1.0",
-  "description": "deterministic `JSON.stringify()` - a faster version of substack's json-stable-strigify without jsonify",
-  "main": "index.js",
-  "types": "index.d.ts",
-  "dependencies": {},
-  "devDependencies": {
-    "benchmark": "^2.1.4",
-    "coveralls": "^3.0.0",
-    "eslint": "^6.7.0",
-    "fast-stable-stringify": "latest",
-    "faster-stable-stringify": "latest",
-    "json-stable-stringify": "latest",
-    "nyc": "^14.1.0",
-    "pre-commit": "^1.2.2",
-    "tape": "^4.11.0"
+  "name": "weather-app",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.14.0",
+    "axios": "^1.4.0",
+    "lucide-react": "^0.263.1",
+    "react-scripts": "5.0.1"
   },
   "scripts": {
-    "eslint": "eslint index.js test",
-    "test-spec": "tape test/*.js",
-    "test": "npm run eslint && nyc npm run test-spec"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/epoberezkin/fast-json-stable-stringify.git"
+  "eslintConfig": {
+    "extends": [
+      "react-app"
+    ]
   },
-  "homepage": "https://github.com/epoberezkin/fast-json-stable-stringify",
-  "keywords": [
-    "json",
-    "stringify",
-    "deterministic",
-    "hash",
-    "stable"
-  ],
-  "author": {
-    "name": "James Halliday",
-    "email": "mail@substack.net",
-    "url": "http://substack.net"
-  },
-  "license": "MIT",
-  "nyc": {
-    "exclude": [
-      "test",
-      "node_modules"
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
     ],
-    "reporter": [
-      "lcov",
-      "text-summary"
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
     ]
   }
 }
